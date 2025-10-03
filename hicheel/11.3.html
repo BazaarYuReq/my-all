@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cubfoot — Dashboard UI</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="11.3.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+
+    <div class="app">
+      <!-- Topbar -->
+      <header class="topbar">
+        <form class="search">
+          <button aria-label="Search">🔍</button>
+          <input type="search" placeholder="Search" />
+          <button class="apps" aria-label="Apps">⋮⋮</button>
+        </form>
+        <div class="lang">
+          <button class="icon">🌐</button>
+          <span>Eng</span>
+        </div>
+      </header>
+
+      <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="brand">
+            <span class="ball">⚽</span>
+            <span class="name">Cubfoot</span>
+          </div>
+
+          <nav class="menu">
+            <a class="active"><span>🏠</span>Dashboard</a>
+            <a><span>🗓️</span>Booking</a>
+            <a><span>📊</span>Point table</a>
+            <a><span>🕒</span>Schedule</a>
+
+            <hr />
+
+            <a><span>🛟</span>Support</a>
+            <a><span>📈</span>Analytics</a>
+            <a><span>💳</span>My payment</a>
+            <a><span>⚙️</span>Settings</a>
+          </nav>
+
+          <button class="logout">⏏ Log Out</button>
+        </aside>
+
+        <!-- Main / Hero -->
+        <main class="main">
+          <section class="hero card">
+            <img
+              class="hero-img"
+              alt="Football hero"
+              src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1600&auto=format&fit=crop"
+            />
+            <div class="hero-overlay"></div>
+
+            <div class="hero-toolbar">
+              <button title="Crop">🖼️</button>
+              <button title="Adjust">🎛️</button>
+              <button title="Share">📤</button>
+            </div>
+
+            <div class="hero-social">
+              <button>ⓘ</button>
+              <button>▷</button>
+              <button>⬇</button>
+            </div>
+
+            <div class="hero-title">
+              <h1>Score Goals with<br />Seamless UI!</h1>
+            </div>
+
+            <div class="hero-book">
+              <div class="teams">
+                <span class="chip green">Green</span>
+                <span class="vs">Vs</span>
+                <span class="chip red">Red</span>
+              </div>
+              <p class="time">05/22 — 04:30pm</p>
+              <div class="cta">
+                <button class="btn ghost">Watch preview</button>
+                <button class="btn primary">Book now</button>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <!-- Right rail -->
+        <aside class="rail">
+          <section class="card stat">
+            <div class="stat-head">
+              <span>View</span>
+              <span class="tag">+12%</span>
+            </div>
+            <!-- Simple inline SVG line chart -->
+            <svg viewBox="0 0 240 80" class="linechart" aria-label="line chart">
+              <polyline
+                points="0,60 40,55 80,50 120,58 160,40 200,30 240,20"
+                fill="none"
+                vector-effect="non-scaling-stroke"
+              />
+              <circle cx="240" cy="20" r="4" />
+            </svg>
+            <div class="axis">
+              <span>1</span><span>2</span><span>3</span><span>4</span
+              ><span>5</span><span>6</span><span>7</span>
+            </div>
+          </section>
+
+          <section class="card promo">
+            <div class="promo-top">
+              <button class="btn mini">Buy now</button>
+              <div class="price">PROMO: <b>8500</b></div>
+            </div>
+            <div class="tags">
+              <span>Mid movie pack</span><span>40% off</span
+              ><span>20% off</span> <span>Free popcorn</span
+              ><span>Lunch pack</span><span>Dinner pack</span>
+            </div>
+          </section>
+
+          <section class="card video">
+            <span class="badge">LIVE</span>
+            <img
+              src="https://images.unsplash.com/photo-1521417531039-74e0b53f64c5?q=80&w=1200&auto=format&fit=crop"
+              alt="Women's trophy"
+            />
+            <button class="play">▶</button>
+            <h4>Woman’s trophy</h4>
+          </section>
+
+          <section class="card video">
+            <span class="badge">LIVE</span>
+            <img
+              src="https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop"
+              alt="Boys tournament"
+            />
+            <button class="play">▶</button>
+            <h4>Boys tournament</h4>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

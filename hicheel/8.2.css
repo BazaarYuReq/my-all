@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #1e6cff;
+  color: white;
+}
+
+.navbar {
+  background: #1e6cff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.menu .btn {
+  background: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.hero {
+  padding: 40px 20px;
+}
+
+.hero h5 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.hero h1 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+.highlight {
+  background: rgb(129, 188, 237);
+  color: black;
+}
+
+.hero p {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  max-width: 300px;
+}
+
+.search input {
+  flex: 1;
+  padding: 6px;
+  border: none;
+}
+
+.search button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+}
+img {
+  max-width: 300px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

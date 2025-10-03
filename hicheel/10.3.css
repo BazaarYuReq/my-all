@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: white;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(67, 0, 62);
+  animation: spin 2s infinite linear;
+}
+
+.box:nth-child(2) {
+  background-color: rgb(132, 10, 99);
+  animation-delay: 0.2s;
+}
+
+.box:nth-child(3) {
+  background-color: rgb(255, 83, 143);
+  animation-delay: 0.4s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

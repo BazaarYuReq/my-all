@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #3e041a;
+  color: black;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #ffc8dd;
+  color: black;
+  padding: 20px 0;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text span {
+  color: #e61a9c;
+}
+
+.btn-main {
+  display: inline-block;
+  background: #e61a9c;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.about {
+  background: #c3e0f9;
+  padding: 60px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.stats div span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+.services {
+  background: #ffc8dd;
+  color: black;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.cta {
+  background: #a2d2ff;
+  text-align: center;
+  padding: 50px 0;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

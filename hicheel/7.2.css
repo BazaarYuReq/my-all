@@ -1,0 +1,19 @@
+.example {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  opacity: 1;
+  transition: width 3s, height 3s, background-color 3s, opacity 3s;
+}
+.example:hover {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  opacity: 0.5;
+}
+h2.hha {
+  display: none;
+}
+h2.hhe {
+  visibility: visible;
+}

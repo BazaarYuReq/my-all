@@ -1,0 +1,79 @@
+body {
+  background: linear-gradient(to right, blue, aquamarine);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  background-color: white;
+  border-radius: 30px;
+}
+#jersey {
+  height: 250px;
+}
+#jersey:hover {
+  height: 270px;
+  width: 30%;
+}
+#jersey2 {
+  height: 200px;
+  width: 30%;
+}
+#jersey2:hover {
+  height: 220px;
+  width: 40%;
+}
+.container {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(5, 300px);
+  gap: 10px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.box:first-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  display: flex;
+  gap: 20px;
+}
+.box:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  gap: 20px;
+}
+.box:nth-child(10) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: blueviolet;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 200px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
